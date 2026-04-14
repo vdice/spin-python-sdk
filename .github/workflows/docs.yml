@@ -36,8 +36,5 @@ jobs:
         with:
           branch: gh-pages
           folder: docs
-          target-folder: .
-          clean: true
-          clean-exclude: |
-            v*
-            !${{ steps.versioning.outputs.folder }}
+          target-folder: docs
+          clean: false

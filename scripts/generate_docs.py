@@ -33,7 +33,6 @@ os.chdir('src')
 os.system('pdoc --html spin_sdk')
 
 # Move the generated documentation to the versioned directory
-os.makedirs(os.path.dirname(target_docs_path), exist_ok=True)
 shutil.move('html/spin_sdk', os.path.join('..', target_docs_path))
 
 # Remove the 'src/html' directory
